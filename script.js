@@ -106,21 +106,21 @@ pages.forEach((_, index) => {
 })
 
 // zoom out 
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
     
     
-    adjustZoom();
+//     adjustZoom();
     
-    // Adjust on window resize
-    window.onresize = adjustZoom;
-});
+//     // Adjust on window resize
+//     window.onresize = adjustZoom;
+// });
 
-function adjustZoom() {
-    // Assuming you want to scale down to 30% as an example
-    if (window.innerWidth < 875) {
-        document.body.style.zoom = "30%";
-    }
-}
+// function adjustZoom() {
+//     // Assuming you want to scale down to 30% as an example
+//     if (window.innerWidth < 875) {
+//         document.body.style.zoom = "30%";
+//     }
+// }
 
 
 // document.addEventListener("DOMContentLoaded", function() {
