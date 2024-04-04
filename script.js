@@ -104,3 +104,16 @@ pages.forEach((_, index) => {
 
     },(index+1)*200+2100);
 })
+
+// zoom out 
+document.addEventListener("DOMContentLoaded", function() {
+    adjustZoom();
+
+    // Adjust on window resize
+    window.onresize = adjustZoom;
+});
+
+function adjustZoom() {
+    // Assuming you want to scale down to 90% as an example
+    document.body.style.zoom = "30%";
+}
