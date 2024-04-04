@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.style.zoom = "30%";
         } else {
             // Reset to default for screens wider than 768 pixels
-            // document.body.style.zoom = "100%";
+            document.body.style.zoom = "100%";
         }
     };
 });
