@@ -106,33 +106,37 @@ pages.forEach((_, index) => {
 })
 
 // zoom out 
-// document.addEventListener("DOMContentLoaded", function() {
-//     adjustZoom();
-
-//     // Adjust on window resize
-//     window.onresize = adjustZoom;
-// });
-
-// function adjustZoom() {
-//     // Assuming you want to scale down to 90% as an example
-//     document.body.style.zoom = "30%";
-// }
-
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Check if the screen width is less than or equal to 768 pixels
-    if (window.innerWidth <= 875) {
-        // Apply zoom only for mobile view
-        document.body.style.zoom = "30%"; // Adjust the zoom level as needed
+    
+    if (window.innerWidth < 875) {
+
+        adjustZoom();
+   
     }
+    // Adjust on window resize
+    window.onresize = adjustZoom;
+});
+
+function adjustZoom() {
+    // Assuming you want to scale down to 90% as an example
+    document.body.style.zoom = "30%";
+}
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Check if the screen width is less than or equal to 768 pixels
+//     if (window.innerWidth <= 875) {
+//         // Apply zoom only for mobile view
+//         document.body.style.zoom = "30%"; // Adjust the zoom level as needed
+//     }
     
     // Optionally, adjust on window resize
-    window.onresize = function() {
-        if (window.innerWidth <= 875) {
-            document.body.style.zoom = "30%";
-        } else {
-            // Reset to default for screens wider than 768 pixels
-            document.body.style.zoom = "100%";
-        }
-    };
-});
+    // window.onresize = function() {
+    //     if (window.innerWidth <= 875) {
+    //         document.body.style.zoom = "30%";
+    //     } else {
+    //         // Reset to default for screens wider than 768 pixels
+    //         document.body.style.zoom = "100%";
+    //     }
+    // };
+// });
