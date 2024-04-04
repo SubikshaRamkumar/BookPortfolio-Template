@@ -605,12 +605,6 @@ body{
 }
 /* @media(max-width:730px){ */
 @media(max-width:875px){
-    @keyframes show-animate {
-        100% {
-            opacity: 1;
-            transform: rotate(0deg);
-        }
-    }
     body
     {
         width: 66rem;
@@ -644,11 +638,11 @@ body{
     }
     body {
         /* Scale down the content to 30% of its original size */
-        /* transform: scale(0.3); */
-        /* transform-origin: top left; */
+        transform: scale(0.32);
+        transform-origin: top left;
         /* width: 333%; 
         height: 333%;  */
-        /* overflow: auto;  */
+        overflow: auto; 
         /* Add scrollbars as necessary */
       }
 }
