@@ -108,18 +108,18 @@ pages.forEach((_, index) => {
 // zoom out 
 document.addEventListener("DOMContentLoaded", function() {
     
-    if (window.innerWidth < 875) {
-
-        adjustZoom();
-   
-    }
+    
+    adjustZoom();
+    
     // Adjust on window resize
     window.onresize = adjustZoom;
 });
 
 function adjustZoom() {
-    // Assuming you want to scale down to 90% as an example
-    document.body.style.zoom = "30%";
+    // Assuming you want to scale down to 30% as an example
+    if (window.innerWidth < 875) {
+        document.body.style.zoom = "30%";
+    }
 }
 
 
